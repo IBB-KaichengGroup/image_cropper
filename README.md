@@ -26,7 +26,7 @@ structure as the original data in `Input`.
 * The `main.R` file contains the code that performs cropping. Double-clicking on it initiates 
 cropping and pops-up a Window Command Prompt for you to track progress.
 
-## Miscellaneous
+## About Script
 
 * The script is written to crop `x%` of pixels from the top. You can change `x` by editing `main.R`.
   1. Open `main.R` with either RStudio, R.exe, or your favourite text editor.
