@@ -13,7 +13,7 @@
     `git clone https://github.com/IBB-KaichengGroup/image_cropper.git`
 
 * Set Windows to run `.R` files using `Rscripts.exe` upon double-click.
-  1. Right click on `main.R` &#8594; Click `Open with` &#8594; Click `More apps &#8595;` &#8594; 
+  1. Right-click `main.R` &#8594; Click `Open with` &#8594; Click `More apps &#8595;` &#8594; 
   Click `Look for another app on this PC`.
   2. Locate `Rscripts.exe`, likely in `C:\Program Files\R\R-xx.xx.xx\bin`.
 
@@ -41,5 +41,5 @@ cropping and pops-up a Window Command Prompt for you to track progress.
 * Previously created output images with the same path will be replaced everytime `main.R` is run.
 * Previously created output images with different paths will not be deleted when `main.R` is run.
 * Input images remain unmodified when `main.R` is run.
-* The first time the script is run, it will likely automatically install some packages. Don't panic, 
-subsequent times will not.
+* The first time the script is run, it will likely automatically install some packages. 
+Subsequent times will not.
