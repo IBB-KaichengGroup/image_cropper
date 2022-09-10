@@ -13,7 +13,8 @@
     `git clone https://github.com/IBB-KaichengGroup/image_cropper.git`
 
 * Set Windows to run `.R` files using `Rscripts.exe` upon double-click.
-  1. Right click on `main.R` &#8594; `Open with` &#8594; `More apps &#8595;` &#8594; `Look for another app on this PC`.
+  1. Right click on `main.R` &#8594; Click `Open with` &#8594; Click `More apps &#8595;` &#8594; 
+  Click `Look for another app on this PC`.
   2. Locate `Rscripts.exe`, likely in `C:\Program Files\R\R-xx.xx.xx\bin`.
 
 ## Repository Structure
@@ -34,9 +35,11 @@ cropping and pops-up a Window Command Prompt for you to track progress.
     # user configurations
     crop_prop <- 0.1
     ```
-  3. Crop proportion of `0.1` means top `10%` of pixels are cut from the top. Change `0.1` to any value 
-  between `0` and `1` to change the crop proportion.
+  3. Crop proportion of `0.1` means top `10%` of pixels are cut from the top. Change `0.1` to any 
+  value between `0` and `1` to change the crop proportion.
 * The script ignores any files that are not `.png`, `.jpg`, `.tif`, `.tiff`.
 * Previously created output images with the same path will be replaced everytime `main.R` is run.
 * Previously created output images with different paths will not be deleted when `main.R` is run.
 * Input images remain unmodified when `main.R` is run.
+* The first time the script is run, it will likely automatically install some packages. Don't panic, 
+subsequent times will not.
