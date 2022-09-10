@@ -1,7 +1,5 @@
 # R Image Cropper
 
-# User Guide
-
 ## Setup
 
 * Ensure R is installed.
