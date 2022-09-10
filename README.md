@@ -13,7 +13,7 @@
     `git clone https://github.com/IBB-KaichengGroup/image_cropper.git`
 
 * Set Windows to run `.R` files using `Rscripts.exe` upon double-click.
-  1. Right-click `main.R` &#8594; Click `Open with` &#8594; Click `More apps &#8595;` &#8594; 
+  1. Right-click `main.R` &#8594; Click `Open with` &#8594; Click `More apps ↓` &#8594; 
   Click `Look for another app on this PC`.
   2. Locate `Rscripts.exe`, likely in `C:\Program Files\R\R-xx.xx.xx\bin`.
 
