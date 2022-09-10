@@ -10,13 +10,14 @@ crop_prop <- 0.1
 
 
 # main
-cat("Begin!\n")
-for (image_path in list.files("input", recursive=TRUE)) {
+image_paths <- list.files("input", recursive=TRUE)
+
+cat(paste0("Cropping ", length(image_paths), " images...", "\n"))
+for (i in 1:length(image_paths)) {
+  image_path <- image_paths[i]
   extension <- strsplit(image_path, ".", fixed=TRUE)[[1]][2]
   
   if (extension %in% c("png", "jpg", "tif", "tiff")) {
-    cat(paste0("Cropping: ", image_path, "\n"))
-    
     # read image
     original_image <- image_read(file.path("input", image_path))
     
@@ -32,8 +33,12 @@ for (image_path in list.files("input", recursive=TRUE)) {
     # save cropped image
     output_path <- file.path("output", image_path)
     image_write(cropped_image, path=output_path, format=extension)
+    
+    # log positive outcome
+    cat(paste0("[", i, "] Cropped: ", image_path, "\n"))
   } else {
-    cat(paste0("Skipped: ", image_path, "\n"))
+    # log negative outcome
+    cat(paste0("[", i, "] Skipped: ", image_path, "\n"))
   }
 }
 cat("Done!\n")
