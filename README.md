@@ -4,13 +4,18 @@
 
 ## Setup
 
-* Ensure R and RStudio are installed.
-  1. Download R: https://cran.r-project.org/bin/windows/base/
-  2. Download RStudio: https://www.rstudio.com/products/rstudio/download/
+* Ensure R is installed.
+  * Download R: https://cran.r-project.org/bin/windows/base/
 
 * You can check the latest commit with the command:
 
     `git clone https://github.com/IBB-KaichengGroup/image_cropper.git`
+
+  * If you elect not to use Git, download the code repository using the following steps:
+    1. Click the green `Code` button at the top of the page.
+    2. Click `Download ZIP`.
+    3. Unzip the folder in which ever directory on your local machine that is most convenient
+    (e.g. Desktop).
 
 * Set Windows to run `.R` files using `Rscripts.exe` upon double-click.
   1. Right-click `main.R` &#8594; Click `Open with` &#8594; Click `More apps ↓` &#8594; 
