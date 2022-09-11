@@ -1,5 +1,6 @@
 # install and load libraries
-if (!("pacman" %in% installed.packages())) install.packages("pacman")
+if (!("pacman" %in% installed.packages()))
+  install.packages("pacman", repos="http://cran.us.r-project.org")
 library("pacman")
 p_load("magick")
 p_load("keypress")
